@@ -10,18 +10,18 @@ if(NOT EXISTS "C:/Users/sunil/esp/v5.3.3/esp-idf/components/bootloader/subprojec
   file(MAKE_DIRECTORY "C:/Users/sunil/esp/v5.3.3/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "C:/Users/sunil/Desktop/Learning_ESP_32_IDF/hello_world/build/bootloader"
-  "C:/Users/sunil/Desktop/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix"
-  "C:/Users/sunil/Desktop/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/tmp"
-  "C:/Users/sunil/Desktop/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/Users/sunil/Desktop/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/src"
-  "C:/Users/sunil/Desktop/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/Sunil_GithubRepo/Learning_ESP_32_IDF/hello_world/build/bootloader"
+  "D:/Sunil_GithubRepo/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix"
+  "D:/Sunil_GithubRepo/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/tmp"
+  "D:/Sunil_GithubRepo/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/Sunil_GithubRepo/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/src"
+  "D:/Sunil_GithubRepo/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/sunil/Desktop/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/Sunil_GithubRepo/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/sunil/Desktop/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/Sunil_GithubRepo/Learning_ESP_32_IDF/hello_world/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
